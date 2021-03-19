@@ -86,7 +86,6 @@ By.xpath("//input[@placeholder]")
 - //tag[@atributo="valor"] - Localiza através do valor de um atributo
 
 ```java
-By.xpath("//h4[contains(text(), 'CAC')]")
 By.xpath("//input[@class='old']")
 ```
 
@@ -94,17 +93,17 @@ By.xpath("//input[@class='old']")
 		
 ```java
 By.xpath("//div/ul/li/a")
-By.xpath("//h4[contains(text(), 'CAC')]/span")
+By.xpath("//h4/span")
 ```
 - Elemento pai - Localiza o elemento pai
 		
 ```java
-By.xpath("//h4[contains(text(), 'CAC')]/..")
+By.xpath("//h4/..")
 ```
 - Elemento avô - Localiza o elemento avô
 		
 ```java
-By.xpath("//h4[contains(text(), 'CAC')]/../..")
+By.xpath("//h4/../..")
 ```
 - Elemento pela sua posição - Localiza um elemente de acordo com sua posição, é utilizado quando precisa capturar um elemento que tenha um ou mais com as mesmas tags
 		
@@ -129,4 +128,10 @@ By.xpath("//input[contains(@id, 'senha')]"))
 		
 ```java
 By.xpath("//button[contains(text(), 'Sair')]"))
+```
+
+- Texto que o texto é igual
+
+```java
+By.xpath("//button[.='Sair']")
 ```
