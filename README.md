@@ -60,7 +60,7 @@ By.cssSelector("a[id^='splitbutton']")
 - Atributo que termina com determinado valor
 
 ```java
-By.cssSelector("input[name$='-ciss']")
+By.cssSelector("input[name$='-test']")
 ```
 
 - Atributo que contém um determinado valor
@@ -115,7 +115,7 @@ By.xpath("//table/tbody/tr/td[4]")
 - Atributo que inicia
 		
 ```java
-By.xpath("//td[starts-with(@data-columnid,'ciss-primarykey')]")
+By.xpath("//td[starts-with(@data-columnid,'test-primarykey')]")
 ```
 
 - Atributo que contém o valor
